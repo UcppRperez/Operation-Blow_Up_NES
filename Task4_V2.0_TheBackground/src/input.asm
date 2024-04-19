@@ -181,6 +181,14 @@ done_checking:
   INC scroll          ; Increment scroll to signal a scroll update
   DEC player_x        ; Move player back to the left by 1 pixel
 skip_scroll_update:
+
+  ; Check if player is at the left edge of the screen
+  LDA player_x
+  CMP #$00
+  BNE no_at_left_edge
+  INC player_x
+no_at_left_edge:
+
   ;; CHECKING FOR ANIMATION ---------------------------------
   INC animation_counter
   LDA animation_counter
