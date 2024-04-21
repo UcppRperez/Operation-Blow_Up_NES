@@ -398,8 +398,8 @@ attributes:
 
 .segment "RODATA"
 palettes:
-.byte $0f, $12, $23, $27
-.byte $0f, $2b, $3c, $39
+.byte $0f, $1c, $3d, $2d
+.byte $0f, $2a, $30, $11
 .byte $0f, $0c, $07, $13
 .byte $0f, $19, $09, $29
 
